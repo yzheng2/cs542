@@ -1,8 +1,8 @@
-// table_order create table order(userID char(50), Cid char(50), shares integer);
+// table_orders create table orders(userID char(50), Cid char(50), shares integer);
 
-package order.vo;
+package orders.vo;
 
-public class order {
+public class orders {
 private char(50) userID;
 private char(50) Cid;
 private integer shares;
