@@ -23,7 +23,7 @@ create table order(userID char(50), Cid char(50), shares integer);
 //Cid represent unique identify code of a company whose stock in this order;
 //shares represent the amount of shares transacted in this order;
 
-create table transactionLog(TID char(50), userID char(50), Cid char(50), time date, price real);
+create table transactionrecord(TID char(50), userID char(50), Cid char(50), time date, price real);
 //TID represent the unique code of a transaction;
 //userID represent unique identify code of a investor make this transaction;
 //Cid represent unique identify code of a company whose stock in this transaction;

@@ -1,0 +1,33 @@
+// table_market create table market(marketIndex char(50), VariationRange real, OverallCapital real);
+
+package market.vo;
+
+public class market {
+private char(50) MarketIndex;
+private real VariationRange;
+private real OverallCapital;
+
+public char(50) getMarketIndex() {
+return MarketIndex;
+}
+
+public void setMarketIndex(char(50) MarketIndex) {
+this.MarketIndex = MarketIndex;
+}
+
+public real getVariationRange() {
+return VariationRange;
+}
+
+public void setVariationRange(real VariationRange) {
+this.VariationRange = VariationRange;
+}
+
+public real getOverallCapital() {
+return OverallCapital;
+}
+
+public void setOverallCapital(real OverallCapital) {
+this.OverallCapital = OverallCapital;
+}
+}

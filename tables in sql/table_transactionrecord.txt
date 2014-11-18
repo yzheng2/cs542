@@ -1,0 +1,51 @@
+// table_transactionrecord create table transactionrecord(TID char(50), userID char(50), Cid char(50), time date, price real);
+
+package transactionrecord.vo;
+
+public class transactionrecord {
+private char(50) TID;
+private char(50) userID;
+private char(50) Cid;
+private date time;
+private real price;
+
+public char(50) getTID() {
+return TID;
+}
+
+public void setTID(char(50) TID) {
+this.TID = TID;
+}
+
+public char(50) getuserID() {
+return userID;
+}
+
+public void setuserID(char(50) userID) {
+this.userID = userID;
+}
+
+public char(50) getCid() {
+return Cid;
+}
+
+public void setCid(char(50) Cid) {
+this.Cid = Cid;
+}
+
+public date gettime() {
+return time;
+}
+
+public void settime(date time) {
+this.time = time;
+}
+
+public real getprice() {
+return price;
+}
+
+public void setprice(real price) {
+this.price = price;
+}
+}

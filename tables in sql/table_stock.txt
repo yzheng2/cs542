@@ -1,0 +1,33 @@
+// table_stock create table stock(Price/share real, OverallShares integer, Variation_Range real);
+
+package stock.vo;
+
+public class stock {
+private real Price/share;
+private integer OverallShares;
+private real Variation_Range;
+
+public real getPrice/share() {
+return Price/share;
+}
+
+public void setPrice/share(real Price/share) {
+this.Price/share = Price/share;
+}
+
+public integer getOverallCapital() {
+return OverallShares;
+}
+
+public void setOverallCapital(integer OverallShares) {
+this.OverallShares = OverallShares;
+}
+
+public real getVariation_Range() {
+return Variation_Range;
+}
+
+public void setVariation_Range(real Variation_Range) {
+this.Variation_Range = Variation_Range;
+}
+}
