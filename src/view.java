@@ -32,22 +32,21 @@ public class view extends JFrame {
 
     private void init() {
     
-    	UserInformation user = new UserInformation("zhang san","male","123123123",123213123.0);
-        stockInfo2 s1 = new stockInfo2(); 
-        JScrollPane scroll = new JScrollPane(s1);	
-        this.setLayout(new GridLayout(1, 2));
-        setResizable(false);
-        this.add(user);
-        this.add(scroll);
+    	//UserInformation user = new UserInformation("zhang san","male","123123123",123213123.0);
+        //stockInfo2 s1 = new stockInfo2(); 
+        //JScrollPane scroll = new JScrollPane(s1);	
+        //this.setLayout(new GridLayout(1, 2));
+        //setResizable(false);
+        //this.add(user);
+        //this.add(scroll);
         
-      
-        //this.add(s2);
-        //this.add(s3);
-        //this.add(s4);
+    	userFrame my=new userFrame();
+    
        
         
-        this.setVisible(true);
-        pack();
+    	my.setVisible(true);
+    	my.setResizable(false);
+        //pack();
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
 } 

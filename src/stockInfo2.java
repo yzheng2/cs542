@@ -43,7 +43,41 @@ public class stockInfo2 extends JPanel {
 	        stockInfo s4 = new stockInfo("3123123","shenzhenkeji",1231,-10.0);
 		setLayout(new GridLayout(0, 1, 0, 0));
 		this.setBounds(500, 500, 500, 500);;
-		add(s1);
+		add(new stockInfo("3123123","shenzhenkeji",1231,-10.0));
+		add(new stockInfo("3123123","shenzhenkeji",1231,-10.0));
+		add(new stockInfo("3123123","shenzhenkeji",1231,-10.0));
+		add(new stockInfo("3123123","shenzhenkeji",1231,-10.0));
+		add(new stockInfo("3123123","shenzhenkeji",1231,-10.0));
+		add(new stockInfo("3123123","shenzhenkeji",1231,-10.0));
+		add(new stockInfo("3123123","shenzhenkeji",1231,-10.0));
+		add(new stockInfo("3123123","shenzhenkeji",1231,-10.0));
+		add(new stockInfo("3123123","shenzhenkeji",1231,-10.0));
+		add(new stockInfo("3123123","shenzhenkeji",1231,-10.0));
+		add(new stockInfo("3123123","shenzhenkeji",1231,-10.0));
+		add(new stockInfo("3123123","shenzhenkeji",1231,-10.0));
+		add(new stockInfo("3123123","shenzhenkeji",1231,-10.0));
+		add(new stockInfo("3123123","shenzhenkeji",1231,-10.0));
+		
+		add(new stockInfo("3123123","shenzhenkeji",1231,-10.0));
+		add(new stockInfo("3123123","shenzhenkeji",1231,-10.0));
+		add(new stockInfo("3123123","shenzhenkeji",1231,-10.0));
+		add(new stockInfo("3123123","shenzhenkeji",1231,-10.0));
+		add(new stockInfo("3123123","shenzhenkeji",1231,-10.0));
+		add(new stockInfo("3123123","shenzhenkeji",1231,-10.0));
+		add(new stockInfo("3123123","shenzhenkeji",1231,-10.0));
+		
+		add(new stockInfo("3123123","shenzhenkeji",1231,-10.0));
+		add(new stockInfo("3123123","shenzhenkeji",1231,-10.0));
+		add(new stockInfo("3123123","shenzhenkeji",1231,-10.0));
+		add(new stockInfo("3123123","shenzhenkeji",1231,-10.0));
+		add(new stockInfo("3123123","shenzhenkeji",1231,-10.0));
+		add(new stockInfo("3123123","shenzhenkeji",1231,-10.0));
+		add(new stockInfo("3123123","shenzhenkeji",1231,-10.0));
+		
+		
+	
+		
+		
 		
 	
 	}
