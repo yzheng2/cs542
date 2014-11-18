@@ -1,0 +1,24 @@
+// table_company create table company(Cid char(50), MarketValuation real);
+
+package company.vo;
+
+public class company {
+private char(50) Cid;
+private char(50) MarketValuation;
+
+public char(50) getCid() {
+return Cid;
+}
+
+public void setCid(char(50) Cid) {
+this.Cid = Cid;
+}
+
+public char(50) getMarketValuation() {
+return MarketValuation;
+}
+
+public void setOverallCapital(char(50) MarketValuation) {
+this.MarketValuation = MarketValuation;
+}
+}
