@@ -1,0 +1,42 @@
+// table_investors create table investors(userID char(50), password char(50), Assets real, AmountofShares integer);
+
+package investors.vo;
+
+public class investors {
+private char(50) userID;
+private char(50) password;
+private real Assets;
+private integer AmountofShares;
+
+public char(50) getuserID() {
+return userID;
+}
+
+public void setuserID(char(50) userID) {
+this.userID = userID;
+}
+
+public char(50) getpassword() {
+return password;
+}
+
+public void setpassword(char(50) password) {
+this.password = password;
+}
+
+public real getAssets() {
+return Assets;
+}
+
+public void setAssets(real Assets) {
+this.Assets = Assets;
+}
+
+public integer getAmountofShares() {
+return AmountofShares;
+}
+
+public void setAmountofShares(integer AmountofShares) {
+this.AmountofShares = AmountofShares;
+}
+}

@@ -1,0 +1,33 @@
+// table_order create table order(userID char(50), Cid char(50), shares integer);
+
+package order.vo;
+
+public class order {
+private char(50) userID;
+private char(50) Cid;
+private integer shares;
+
+public char(50) getuserID() {
+return userID;
+}
+
+public void setuserID(char(50) userID) {
+this.userID = userID;
+}
+
+public char(50) getCid() {
+return Cid;
+}
+
+public void setCid(char(50) Cid) {
+this.Cid = Cid;
+}
+
+public integer getshares() {
+return shares;
+}
+
+public void setshares(integer shares) {
+this.shares = shares;
+}
+}
