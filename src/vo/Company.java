@@ -4,7 +4,7 @@ package vo;
 
 public class Company {
 	private String Cid;
-	private String MarketValuation;
+	private Double MarketValuation;
 
 	public String getCid() {
 		return Cid;
@@ -14,11 +14,11 @@ public class Company {
 		this.Cid = Cid;
 	}
 
-	public String getMarketValuation() {
+	public Double getMarketValuation() {
 		return MarketValuation;
 	}
 
-	public void setOverallCapital(String MarketValuation) {
+	public void setMarketValuation(Double MarketValuation) {
 		this.MarketValuation = MarketValuation;
 	}
 }
