@@ -1,74 +1,60 @@
 package ui;
+import java.util.*;
 
-
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Graphics;
-import java.awt.GridLayout;
-import java.awt.Image;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
-
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JList;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JTextField;
-import javax.swing.JToggleButton;
-import javax.swing.SwingConstants;
 
+import vo.Events;
+import factory.DAOFactory;
+public class view{
 
-public class view extends JFrame {
-
-    public static void main(String[] args) {
-    	 view v = new view();
+    public static void main(String[] args) throws Exception {
+    	
+    	Login_frame lo = new Login_frame();
+    	lo.setVisible(true);
+    	
     }
-    public view() {
-        init();
-    }
-
-    private void init() {
-    
-    	UserInformation user = new UserInformation("zhang san","male","123123123",123213123.0);
-        stockInfo2 s1 = new stockInfo2(); 
-        JScrollPane scroll = new JScrollPane(s1);	
-        this.setLayout(new GridLayout(1, 2));
-        setResizable(false);
-        this.add(user);
-        this.add(scroll);
-        
-      
-        //this.add(s2);
-        //this.add(s3);
-        //this.add(s4);
-       
-        
-        this.setVisible(true);
-        pack();
-        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-    }
+   
 } 
 
 class newThread implements Runnable{
 	 public int i=0;
-	 view v = new view();
+	 private String UserID;
+	 User_Frame my;
+	
 	@Override
 	public void run() {
-		while(i!=100){
+		try {
+			
+			my=new User_Frame(UserID);
+			my.setVisible(true);
+	    	my.setResizable(false);
+	        my.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	        
+		} catch (Exception e1) {
+			e1.printStackTrace();
+		}
+		controller.setUi(my.getUserInof());
+		while(true){
 			try {
-				Thread.sleep(1000);
+				Thread.sleep(10000);
+				Events event = DAOFactory.getIEventsInstance().getRandomEvent();
+				controller.setEvent(event);
+				my.getTotals().updata();
+				my.getTotals().updateUI();
+				my.getstockpanel().updata();
+				my.getstockpanel().updateUI();
+				//my.getUserInof().update();
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (Exception e) {
 				e.printStackTrace();
 			}
-			System.out.println("this is "+i);
-			i++;
+		
 		}
 		
 	}	
+	
+	void setUserID(String UserID){
+		this.UserID = UserID;
+	}
 }
-

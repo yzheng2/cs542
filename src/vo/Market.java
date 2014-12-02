@@ -1,15 +1,15 @@
 package vo;
 
 public class Market {
-	private String MarketIndex;
+	private int MarketIndex;
 	private Double VariationRange;
 	private Double OverallCapital;
 
-	public String getMarketIndex() {
+	public int getMarketIndex() {
 		return MarketIndex;
 	}
 
-	public void setMarketIndex(String MarketIndex) {
+	public void setMarketIndex(int MarketIndex) {
 		this.MarketIndex = MarketIndex;
 	}
 

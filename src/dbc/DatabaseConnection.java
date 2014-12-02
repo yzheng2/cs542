@@ -59,7 +59,7 @@ public class DatabaseConnection {
 		try {
 			//GetDBFromXML();
 			
-			setParameter("src\\dbconfig.properties");
+			setParameter("src/dbconfig.properties");
 			displayParameter();
 			Class.forName(DBdriver).newInstance();// install database driver
 			this.conn = DriverManager.getConnection(DBURL, DBUSER, DBPASS);// connect to database
